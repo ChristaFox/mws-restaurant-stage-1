@@ -1,20 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
+img, embed, object, video {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 100%;
 	color: #333;
-	line-height: 1.5;
+	/* line-height: 1.5; */
 }
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+  position: relative;
+  display: block;
+  display: space-between;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 100%;
 	color: #333;
 }
 a {
@@ -30,10 +37,14 @@ a img{
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0 0 20px;
+  margin: 20px;
+  padding: 40px;
+  min-width: 100%;
+  min-height: 100%;
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
+ 
 }
 #maincontent {
   background-color: #f3f3f3;
@@ -174,7 +185,7 @@ nav h1 a {
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
-  font-size: 10pt;
+  font-size: 30%;
   margin: 15px 0 0;
   padding: 8px 30px 10px;
   text-align: center;
